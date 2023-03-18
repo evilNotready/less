@@ -17,16 +17,16 @@ function reboot(){
 }
 
   return (
-    <div className='bg-[url("/bg.jpeg")]'>
-      <div className='bg-black bg-opacity-50'>
+    <div className='bg-[url("/bg.jpeg")] h-screen'>
+      <div className='bg-black bg-opacity-50 h-screen'>
            <div className='flex justify-center pt-32 text-indigo-500 text-9xl'>
                 <Header value = {count}/>
            </div>
-           <div  className='flex justify-center pb-16 space-x-10 text-white columns-1 mt-60'>
-                <button className='bg-indigo-400 px-3 py-1 rounded-xl text-xl' onClick={increment}>ПЛЮС</button>
-                <button className='bg-indigo-400 px-3 py-1 rounded-xl text-xl' onClick={subtraction}>МИНУС</button>
-                <button className='bg-indigo-400 px-3 py-1 rounded-xl text-xl' onClick={reboot}>ВЕРНУТЬ К НУЛЮ</button>
-            </div>
+              <div  className='flex justify-center mt-60 md:space-x-10 flex-col md:flex-row space-y-5 sm:space-y-0'>
+                    <button className='bg-indigo-400 px-3 py-1 rounded-xl text-xl' onClick={increment}>ПЛЮС</button>
+                    <button className='bg-indigo-400 px-3 py-1 rounded-xl text-xl' onClick={subtraction}>МИНУС</button>
+                    <button className='bg-indigo-400 px-3 py-1 rounded-xl text-xl' onClick={reboot}>ВЕРНУТЬ К НУЛЮ</button>
+                </div>
       </div>
     </div>
   )
